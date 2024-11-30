@@ -23,7 +23,7 @@ We provide code to read and visualize $Data_{1d}$, $Data_{3d}$, and *Env-Data*. 
 ### Steps to Use the Dataset
 
 1. **Download and Extract the Dataset**: 
-   - Download and extract the $TCN_D$ dataset to your desired path (`path_a`).
+   - Download and extract the $TCN_D$ dataset to your desired path (`dataset_path`).
    
 2. **Set Up the Environment**:
    - Install Python 3.7 and the necessary dependencies:
