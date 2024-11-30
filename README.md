@@ -74,8 +74,9 @@ We provide code to read and visualize $Data_{1d}$, $Data_{3d}$, and *Env-Data*. 
     We crop the data covering a **25° x 25°** region around the TC center. The spatial resolution is **0.25°**, and the time resolution is **6 hours**. We collect **Geopotential Height (GPH)**, **U-component of wind**, and **V-component of wind** at **200 hPa**, **500 hPa**, **850 hPa**, and **925 hPa** pressure levels. **Sea Surface Temperature (SST)** data is also included in the **Data3D** set.
     
     ### Examples of $Data_{1d}$:
-    ![Data1D Details](Data1D.png)
-   
+    ![Data1D Example](Data1D.png)
+
+   The bolded content in the first row of the figure represents some information about the typhoon Haiyan at 2001101418 that we want to examine.
     - **ID**: Time step of the TC.
     - **LONG**: Longitude of the TC center (with a precision of **0.1°E**).
     - **LAT**: Latitude of the TC center (with a precision of **0.1°N**).
