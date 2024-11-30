@@ -13,6 +13,8 @@ We offer two download options for the **TropiCycloneNet Dataset**  ($TCN_D$):
   
 - **Test Subset**: A smaller subset of data from 2017 to 2023, intended for testing purposes. The data size is approximately `xxx GB`.
     - [Test Subset](www.xxxxxx)
+      
+More download options will be added in the future, such as downloading by ocean region, by year, etc.
 
 ## Check Data
 
