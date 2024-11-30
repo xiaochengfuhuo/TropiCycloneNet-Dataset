@@ -56,9 +56,10 @@ We provide code to read and visualize $Data_{1d}$, $Data_{3d}$, and *Env-Data*. 
 
 1. **Get Details for $Data_{3d}$**:
 ![Data1D Example](3d_overview.png)
+
    The **3D data** covers the **25° x 25° region** around the tropical cyclone's center. The spatial resolution is **0.25°**, and the temporal resolution is **6 hours**. We collect **Geopotential Height (GPH)**, **U-component of wind**, and **V-component of wind** at **200 hPa, 500 hPa, 850 hPa**, and **925 hPa** pressure levels. **Sea Surface Temperature (SST)** data is also included in the **Data3D** set.
 
-2. **Example of $Data_{1d}$, $Data_{3d}$, and *Env-Data***:
+3. **Example of $Data_{1d}$, $Data_{3d}$, and *Env-Data***:
    The following command visualizes the tropical cyclone data for a specific time (`2001101418` for `Haiyan` in the Western Pacific region):
 
    ```bash
@@ -69,10 +70,12 @@ We provide code to read and visualize $Data_{1d}$, $Data_{3d}$, and *Env-Data*. 
     
     ### Examples of $Data_{3d}$:
     ![3D Data Example](Data3D.png)
+   
     We crop the data covering a **25° x 25°** region around the TC center. The spatial resolution is **0.25°**, and the time resolution is **6 hours**. We collect **Geopotential Height (GPH)**, **U-component of wind**, and **V-component of wind** at **200 hPa**, **500 hPa**, **850 hPa**, and **925 hPa** pressure levels. **Sea Surface Temperature (SST)** data is also included in the **Data3D** set.
     
     ### Examples of $Data_{1d}$:
     ![Data1D Details](Data1D.png)
+   
     - **ID**: Time step of the TC.
     - **LONG**: Longitude of the TC center (with a precision of **0.1°E**).
     - **LAT**: Latitude of the TC center (with a precision of **0.1°N**).
@@ -86,6 +89,7 @@ We provide code to read and visualize $Data_{1d}$, $Data_{3d}$, and *Env-Data*. 
     
     ### Examples of *Env-Data*:
     ![Env-Data Example](Env-Data.png)
+   
     The **Env-Data** includes the following attributes:
     
     - **Movement Velocity**: The movement velocity of the tropical cyclone.
