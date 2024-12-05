@@ -39,7 +39,7 @@ We provide code to read and visualize $Data_{1d}$, $Data_{3d}$, and *Env-Data*. 
    - After setting up the environment, run the `read_TCND.py` script:
    
      ```bash
-     python read_TCND.py dataset_path TC_name TC_date area
+     python read_TCND.py dataset_path TC_name TC_date area train_val_test
      ```
    
      Here:
@@ -47,6 +47,7 @@ We provide code to read and visualize $Data_{1d}$, $Data_{3d}$, and *Env-Data*. 
      - `TC_name` is the name of the tropical cyclone you wish to examine.
      - `TC_date` is the specific date and time of the cyclone in `YYYYMMDDHH` format.
      - `area` specifies the ocean region where the cyclone occurred (e.g., WP for Western Pacific, EP for Eastern Pacific, etc.).
+     - `train_val_test` indicates whether the queried typhoon belongs to training, validation, or test set (train or val or test).
 
    - After running the script, you will find visualized images of **Data1D**, **Data3D**, and **Env-Data** in the current directory. The images will be named `Data1D.png`, `Data3D.png`, and `Env-Data.png`.
 
