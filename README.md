@@ -64,7 +64,7 @@ We provide code to read and visualize $Data_{1d}$, $Data_{3d}$, and *Env-Data*. 
    The following command visualizes the tropical cyclone data for a specific time (`2001101418` for `Haiyan` in the Western Pacific region):
 
    ```bash
-   python read_TCND.py dataset_path Haiyan 2001101418 WP
+   python read_TCND.py dataset_path Haiyan 2001101418 WP train
    ```
 
     After running the script, you will see the corresponding cyclone **Data1D**, **Data3D**, and **Env-Data** visualizations.
