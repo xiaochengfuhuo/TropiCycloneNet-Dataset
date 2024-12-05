@@ -114,3 +114,20 @@ We would like to acknowledge the support of the research community and the insti
 ---
 
 Feel free to reach out with any questions or comments regarding the **TropiCycloneNet Dataset** or how to use this project.
+
+
+## Citing TropiCycloneNet
+
+```
+@article{TropiCycloneNet_under_review,
+author = {Huang, Cheng and Mu, Pan and Zhang, Jinglin and Chan, Sixian and Zhang Shiqi and Yan, Hanting and Chen, Shengyong and Bai, Cong},
+title = {TropiCycloneNet: A Benchmark Dataset and A Deep Learning Method for Global Tropical Cyclone Forecasting},
+journal = {Nature Communications},
+volume = {under_review},
+number = {under_review},
+pages = {under_review},
+doi = {under_review},
+url = {under_review},
+year = {under_review}
+}
+```
