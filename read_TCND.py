@@ -130,7 +130,10 @@ def plot_env(env_data, z, latitude, longitude, pressure_levels, idx_500hPa):
 
     # Show the plot and table
     plt.tight_layout()
+
+    plt.savefig('Env-Data.png')
     plt.show()
+
 
 
 # Plotting function to visualize U, V, and Z components at all pressure levels
@@ -186,6 +189,8 @@ def plot_all_pressure_levels(u_data, v_data, z_data, sst_data, pressure_levels, 
             ax4.set_axis_off()
 
     plt.tight_layout()
+
+    plt.savefig('Data3D.png')
     plt.show()
 
 
@@ -262,7 +267,9 @@ def plot_data1d(data):
 
     # Adjust layout to make the plot and table well spaced
     plt.tight_layout()
+    plt.savefig('Data1D.png')
     plt.show()
+
 
 def read_all(dataset_path,TC_name,TC_date,area,train_val_test):
     read_3D(dataset_path,TC_name,TC_date,area)
