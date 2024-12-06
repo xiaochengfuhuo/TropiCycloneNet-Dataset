@@ -8,11 +8,11 @@ This project introduces the details of the **TropiCycloneNet Dataset**  ($TCN_D$
 
 We offer two download options for the **TropiCycloneNet Dataset**  ($TCN_D$):
 
-- **Full Dataset**: Contains tropical cyclone data from 1950 to 2023, across six major oceans. The data size is approximately `xxx GB`.
-    - [Full Dataset](www.xxxxxx)
+- **Full Dataset**: Contains tropical cyclone data from 1950 to 2023, across six major oceans. The data size is approximately `25.7 GB`.
+    - [Full Dataset](https://drive.google.com/file/d/1BUAab0OYyiArbraQHu2oMoj_jF-nNUxT/view?usp=sharing)
   
-- **Test Subset**: A smaller subset of data from 2017 to 2023, intended for testing purposes. The data size is approximately `xxx GB`.
-    - [Test Subset](www.xxxxxx)
+- **Test Subset**: A smaller subset of data from 2017 to 2023, intended for testing purposes. The data size is approximately `3.34 GB`.
+    - [Test Subset](https://drive.google.com/file/d/1BUAab0OYyiArbraQHu2oMoj_jF-nNUxT/view?usp=sharing)
       
 More download options will be added in the future, such as downloading by ocean region, by year, etc.
 
