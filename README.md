@@ -8,11 +8,11 @@ This project introduces the details of the **TropiCycloneNet Dataset**  ($TCN_D$
 
 We offer two download options for the **TropiCycloneNet Dataset**  ($TCN_D$):
 
-- **Full Dataset**: Contains tropical cyclone data from 1950 to 2023, across six major oceans. The data size is approximately `xxx GB`.
-    - [Full Dataset](www.xxxxxx)
+- **Full Dataset**: Contains tropical cyclone data from 1950 to 2023, across six major oceans. The data size is approximately `25.7 GB`.
+    - [Full Dataset](https://drive.google.com/file/d/1BUAab0OYyiArbraQHu2oMoj_jF-nNUxT/view?usp=sharing)
   
-- **Test Subset**: A smaller subset of data from 2017 to 2023, intended for testing purposes. The data size is approximately `xxx GB`.
-    - [Test Subset](www.xxxxxx)
+- **Test Subset**: A smaller subset of data from 2017 to 2023, intended for testing purposes. The data size is approximately `3.34 GB`.
+    - [Test Subset](https://drive.google.com/file/d/1Xx2rzH6ztSGLTUR9EZkfDz5mQHsvhHsi/view?usp=sharing)
       
 More download options will be added in the future, such as downloading by ocean region, by year, etc.
 
@@ -39,7 +39,7 @@ We provide code to read and visualize $Data_{1d}$, $Data_{3d}$, and *Env-Data*. 
    - After setting up the environment, run the `read_TCND.py` script:
    
      ```bash
-     python read_TCND.py dataset_path TC_name TC_date area
+     python read_TCND.py dataset_path TC_name TC_date area train_val_test
      ```
    
      Here:
@@ -47,6 +47,7 @@ We provide code to read and visualize $Data_{1d}$, $Data_{3d}$, and *Env-Data*. 
      - `TC_name` is the name of the tropical cyclone you wish to examine.
      - `TC_date` is the specific date and time of the cyclone in `YYYYMMDDHH` format.
      - `area` specifies the ocean region where the cyclone occurred (e.g., WP for Western Pacific, EP for Eastern Pacific, etc.).
+     - `train_val_test` indicates whether the queried typhoon belongs to training, validation, or test set (train or val or test).
 
    - After running the script, you will find visualized images of **Data1D**, **Data3D**, and **Env-Data** in the current directory. The images will be named `Data1D.png`, `Data3D.png`, and `Env-Data.png`.
 
@@ -55,15 +56,15 @@ We provide code to read and visualize $Data_{1d}$, $Data_{3d}$, and *Env-Data*. 
 ### Visualizing All Data
 
 1. **Get Details for $Data_{3d}$**:
-![Data1D Example](3d_overview.png)
+![Data1D Example](3d_overview.jpg)
 
-   The **3D data** covers the **25° x 25° region** around the tropical cyclone's center. The spatial resolution is **0.25°**, and the temporal resolution is **6 hours**. We collect **Geopotential Height (GPH)**, **U-component of wind**, and **V-component of wind** at **200 hPa, 500 hPa, 850 hPa**, and **925 hPa** pressure levels. **Sea Surface Temperature (SST)** data is also included in the **Data3D** set.
+   The **3D data** covers the **20° x 20° region** around the tropical cyclone's center. The spatial resolution is **0.25°**, and the temporal resolution is **6 hours**. We collect **Geopotential Height (GPH)**, **U-component of wind**, and **V-component of wind** at **200 hPa, 500 hPa, 850 hPa**, and **925 hPa** pressure levels. **Sea Surface Temperature (SST)** data is also included in the **Data3D** set.
 
 3. **Example of $Data_{1d}$, $Data_{3d}$, and *Env-Data***:
    The following command visualizes the tropical cyclone data for a specific time (`2001101418` for `Haiyan` in the Western Pacific region):
 
    ```bash
-   python read_TCND.py dataset_path Haiyan 2001101418 WP
+   python read_TCND.py dataset_path Haiyan 2001101418 WP train
    ```
 
     After running the script, you will see the corresponding cyclone **Data1D**, **Data3D**, and **Env-Data** visualizations.
@@ -71,7 +72,7 @@ We provide code to read and visualize $Data_{1d}$, $Data_{3d}$, and *Env-Data*. 
     ### Examples of $Data_{3d}$:
     ![3D Data Example](Data3D.png)
    
-    We crop the data covering a **25° x 25°** region around the TC center. The spatial resolution is **0.25°**, and the time resolution is **6 hours**. We collect **Geopotential Height (GPH)**, **U-component of wind**, and **V-component of wind** at **200 hPa**, **500 hPa**, **850 hPa**, and **925 hPa** pressure levels. **Sea Surface Temperature (SST)** data is also included in the **Data3D** set.
+    We crop the data covering a **20° x 20°** region around the TC center. The spatial resolution is **0.25°**, and the time resolution is **6 hours**. We collect **Geopotential Height (GPH)**, **U-component of wind**, and **V-component of wind** at **200 hPa**, **500 hPa**, **850 hPa**, and **925 hPa** pressure levels. **Sea Surface Temperature (SST)** data is also included in the **Data3D** set.
     
     ### Examples of $Data_{1d}$:
     ![Data1D Example](Data1D.png)
@@ -100,7 +101,8 @@ We provide code to read and visualize $Data_{1d}$, $Data_{3d}$, and *Env-Data*. 
     - **24-hour History of Intensity Change**: The intensity change of the cyclone in the past 24 hours.
     - **Subtropical High Region**: Extracted from **500 hPa Geopotential Height (GPH)** data. This variable is processed to make the data more suitable for input to **DL models**.
     
-    
+## Additional Experiments    
+![Comparison with DBF-Net](DBF-Net.png)
 
 ## License
 
@@ -113,3 +115,20 @@ We would like to acknowledge the support of the research community and the insti
 ---
 
 Feel free to reach out with any questions or comments regarding the **TropiCycloneNet Dataset** or how to use this project.
+
+
+## Citing TropiCycloneNet
+
+```
+@article{TropiCycloneNet_under_review,
+author = {Huang, Cheng and Mu, Pan and Zhang, Jinglin and Chan, Sixian and Zhang Shiqi and Yan, Hanting and Chen, Shengyong and Bai, Cong},
+title = {TropiCycloneNet: A Benchmark Dataset and A Deep Learning Method for Global Tropical Cyclone Forecasting},
+journal = {Nature Communications},
+volume = {under_review},
+number = {under_review},
+pages = {under_review},
+doi = {under_review},
+url = {under_review},
+year = {under_review}
+}
+```
