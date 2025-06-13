@@ -1,5 +1,5 @@
 # TropiCycloneNet-Dataset
-
+![图片](https://github.com/user-attachments/assets/792867ad-5ea4-49c8-beb9-267276de7aec)
 ## Overview
 
 This project introduces the details of the **TropiCycloneNet Dataset**  ($TCN_D$), a comprehensive dataset for studying tropical cyclones (TCs). It includes $Data_{1d}$, $Data_{3d}$, and **environmental data (*Env-Data*)** collected for various tropical cyclones in the major oceanic regions from 1950 to 2023. The dataset is aimed at providing valuable insights for tropical cyclone research and predictive modeling.
@@ -122,13 +122,13 @@ Feel free to reach out with any questions or comments regarding the **TropiCyclo
 ```
 @article{TropiCycloneNet_under_review,
 author = {Huang, Cheng and Mu, Pan and Zhang, Jinglin and Chan, Sixian and Zhang Shiqi and Yan, Hanting and Chen, Shengyong and Bai, Cong},
-title = {TropiCycloneNet: A Benchmark Dataset and A Deep Learning Method for Global Tropical Cyclone Forecasting},
+title = {Benchmark Dataset and Deep Learning Method for Global Tropical Cyclone Forecasting},
 journal = {Nature Communications},
-volume = {under_review},
-number = {under_review},
-pages = {under_review},
-doi = {under_review},
-url = {under_review},
-year = {under_review}
+volume = {Accepted},
+number = {Accepted},
+pages = {Accepted},
+doi = {Accepted},
+url = {Accepted},
+year = {Accepted}
 }
 ```
