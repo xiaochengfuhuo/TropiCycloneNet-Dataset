@@ -121,7 +121,7 @@ Feel free to reach out with any questions or comments regarding the **TropiCyclo
 
 ```
 @article{Huang2025,
-  author    = {Cheng Huang and Pan Mu and Jinglin Zhang and Sixian Chan and Shiqi Zhang and Hanting Yan and Shengyong Chen and Cong Bai},
+  author    = {Huang, Cheng and Mu, Pan and Zhang, Jinglin and Chan, Sixian and Zhang, Shiqi and Yan, Hanting and Chen, Shengyong and Bai, Cong},
   title     = {Benchmark dataset and deep learning method for global tropical cyclone forecasting},
   journal   = {Nature Communications},
   volume    = {16},
