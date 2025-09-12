@@ -92,7 +92,7 @@ We provide code to read and visualize $Data_{1d}$, $Data_{3d}$, and *Env-Data*. 
     ### Examples of *Env-Data*:
     ![Env-Data Example](Env-Data.png)
    
-   **New** We also upload the original env-data and the processing code.
+   **New** **We also upload the original env-data and the processing code.**
    
     The **Env-Data** includes the following attributes:
     
